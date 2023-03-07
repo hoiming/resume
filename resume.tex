@@ -1,0 +1,172 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[default]{lato}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{fontawesome}
+\usepackage{enumitem}
+\DeclareFontFamily{U}{fontawesomeOne}{}
+\DeclareFontShape{U}{fontawesomeOne}{m}{n}
+{<-> FontAwesome--fontawesomeone}{}
+\DeclareRobustCommand\FAone{\fontencoding{U}\fontfamily{fontawesomeOne}\selectfont}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+{\setlength{\leftmargin}{#1}}%
+     \item[]
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+{\setlength{\leftmargin}{-0.5#1}}%
+\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+#1 &
+#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+	{\LARGE \textbf{Haiming Liang}}\\
+	Guangzhou, China
+	\vspace{0.05cm}
+	\\
+	\raisebox{-0.2\height} {\Large \faPhoneSquare} \ \  (086) 15626001565 \hfill\raisebox{-0.2\height}{\Large \faEnvelopeSquare} \ \ $haiming\_liang@hotmail.com$
+\end{center}
+
+\hrule
+\vspace{-1em}
+\subsection*{\Large Experience}
+
+\renewcommand\labelitemi{}
+\renewcommand\labelitemii{$\bullet$}
+\begin{itemize}[leftmargin=1em]
+	\parskip=0.1em
+		
+		
+	\item
+	      \headerrow
+	      {\textbf{InfoSys}}
+	      {\textbf{Guangzhou, Guangdong}}
+	      \headerrow
+	      {\emph{Node.js developer}}
+	      {\emph{July 2022 -- Present}}
+	      \begin{itemize*}
+	      	\item Working as a contractor in HSBC infrastructure team, write program to manage keystore file, to create Jenkins pipeline and to interact with third-party services.
+	      	\item Maintain server health check shell scripts, create Ansible playbooks to deploy API services.
+	      	\item As one of the Agile team, I need to fix API bugs and to analyze server crash, working closely with UI and QA teamates.
+	      \end{itemize*}
+	      	      
+	\item
+	      \headerrow
+	      {\textbf{Farben Information Technology}}
+	      {\textbf{Guangzhou, Guangdong}}
+	      \headerrow
+	      {\emph{Node.js developer}}
+	      {\emph{August 2021 -- July 2022}}
+	      \begin{itemize*}
+	      	\item Designed and implemented Node.js API for Integrated Authorization Management System in GuangFa Securities, build Docker image and to deploy it to testing environment.
+	      	\item Create automation testing script for API, generate test reports.
+	      \end{itemize*}
+    \item   
+            \headerrow
+            {\textbf{Chinasoft International}}
+	      {\textbf{Guangzhou, Guangdong}}
+	      \headerrow
+	      {\emph{API Automation Tester}}
+	      {\emph{July 2019 -- July 2021}}
+	      \begin{itemize*}
+	      	\item Discuss software requirement inside the Agile team with business analysts, create API test script using Java programming language, to run test cases in Jenkins pipeline.
+	      	\item As a QA, I need to collect test reports and hand over to QA lead for review, to make sure software quality according to Jenkins pipeline result.
+	      \end{itemize*}
+	      	      
+	\item
+	      \headerrow
+	      {\textbf{Pactera}}
+	      {\textbf{Guangzhou, Guangdong}}
+	      \headerrow
+	      {\emph{VBA developer}}
+	      {\emph{February 2015 -- September 2016}}
+	      \begin{itemize*}
+	      	\item Develop and maintain Excel VBA scripts for HSBC traders. To analyze business requirement and to perform UAT with end users.
+	      \end{itemize*}
+    \item
+	      \headerrow
+	      {\textbf{Bamboo Computer}}
+	      {\textbf{Guangzhou, Guangdong}}
+	      \headerrow
+	      {\emph{C\# developer}}
+	      {\emph{July 2014 -- February 2015}}
+	      \begin{itemize*}
+	      	\item Maintain a Winform based Jewelry transaction system.
+                \item Design and develop an ERP system based on ASP.NET MVC.
+	      \end{itemize*}
+    \item
+	      \headerrow
+	      {\textbf{Chengyi Software Development}}
+	      {\textbf{Guangzhou, Guangdong}}
+	      \headerrow
+	      {\emph{Technical Support}}
+	      {\emph{June 2012 -- September 2013}}
+	      \begin{itemize*}
+	      	\item Technical support for Cable network management system.
+                \item Production support on Oracle database for customer information.
+	      \end{itemize*}     
+	      	      
+\end{itemize}
+
+\hrule
+\vspace{-1em}
+\subsection*{\Large Skills}
+
+\hyphenpenalty=1000
+\begin{itemize}[leftmargin=1em,noitemsep]
+	\item \textbf{Languages:}
+	      Node.js, Javascript, Java, Python, SQL, Shell Script
+	\item \textbf{Software:}
+	      Git/Github, Redis, MongoDB, Atlassian (Jira, Confluence), AWS (DynamoDB, EC2, Lambda), Webstorem, IntelliJ IDEA
+\end{itemize}
+
+\hrule
+\vspace{-1em}
+\subsection*{\Large Education}
+
+\begin{itemize}[leftmargin=1em]
+	\parskip=0.1em
+		
+	\item
+	      \headerrow
+	      {\textbf{South China Normal University}}
+	      {\textbf{Guangzhou, Guangdong}}
+	      \headerrow
+	      {\emph{M.S. Software Engineering}}
+	      {\emph{September 2017 -- July 2019}}
+            \headerrow
+	      {\textbf{South China Agricultural University}}
+	      {\textbf{Guangzhou, Guangdong}}
+	      \headerrow
+	      {\emph{B.S. Software Engineering}}
+	      {\emph{September 2008 -- July 2012}}
+	      	      
+\end{itemize}
+
+\end{document}
